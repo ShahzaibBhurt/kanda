@@ -1,0 +1,316 @@
+.description-box{
+    background-color: rgb(247, 247, 247);
+    border-top: 5px solid rgb(83, 159, 59);
+    padding: 40px 20px 20px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 263px;
+    height: auto;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+.des-box-btn{
+    margin-top: 25px;
+    border-radius: 0 !important;
+    font-weight: 600 !important;
+    color: white;
+}
+.des-box-btn:hover{
+    color: white !important;
+    box-shadow: 0px 0px 10px -1px grey;
+    transition: 0.4s;
+}
+.signup-form{
+    box-shadow: 0px 0px 20px 0px grey;
+    border-radius: 20px;
+    padding: 30px 0px;
+    margin-bottom: 30px;
+    background: #F9F6F6;
+}
+.signup-form input, .signup-form select{
+    border-radius: 20px !important;
+    height: 40px !important;
+    background: #e0e0e0;
+}
+.signup-form input:focus{
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(77, 169, 39);
+}
+input[type="date"]::before { 
+	content: attr(data-placeholder);
+	width: 100%;
+}
+li.disabled{
+   pointer-events: none;
+  cursor: default; 
+}
+/* hide our custom/fake placeholder text when in focus to show the default
+ * 'mm/dd/yyyy' value and when valid to show the users' date of birth value.
+ */
+input[type="date"]:focus::before,
+input[type="date"]:valid::before { display: none }
+.sub-btn{
+    width: 130px;
+    font-weight: 600 !important;
+}
+
+.wizard {
+    margin: 20px auto;
+}
+
+    .wizard .nav-tabs {
+        
+        position: relative;
+        margin: 40px auto;
+        margin-bottom: 0;
+        border-bottom-color: #e0e0e0;
+    }
+
+    .wizard > div.wizard-inner {
+        position: relative;
+    }
+
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 40%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #f9f6f6;
+    border: 2px solid #e0e0e0;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+span.round-tab i{
+    color:#555555;
+}
+.wizard li.active span.round-tab {
+    background: #f9f6f6;
+    border: 2px solid #539f3b;
+    
+}
+.wizard li.active span.round-tab i{
+    color: #539f3b;
+}
+
+span.round-tab:hover {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.wizard .nav-tabs > li {
+    width: 25%;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #5bc0de;
+    transition: 0.1s ease-in-out;
+}
+
+.wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #539f3b;
+}
+
+.wizard .nav-tabs > li a {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+    .wizard .nav-tabs > li a:hover {
+        background: transparent;
+    }
+
+.wizard .tab-pane {
+    position: relative;
+    padding-top: 50px;
+}
+
+.wizard h3 {
+    margin-top: 0;
+}
+
+@media( max-width : 585px ) {
+
+    .wizard {
+        width: 100%;
+        height: auto !important;
+    }
+.tab-content{
+   padding: 0px 10px !important;
+}
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
+.tab-content{
+   padding: 0px 40px;
+}
+@media screen and (min-width: 768px){
+    .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    height: 50px !important;
+    width: 60px !important;
+    padding-top: 9px !important;
+}
+    .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    height: 50px !important;
+    width: 60px !important;
+    padding-top: 9px !important;
+}
+    a > .glyphicon-chevron-left:before, a > .glyphicon-chevron-left:after {
+    left: 10px !important;
+}
+    #myNavbar .dropdown-menu li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+#myNavbar .dropdown-menu{
+    border-top: 2px solid #bb0007;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: -30px !important;
+}
+    .navbar-nav>.active>.dropdown-menu {
+    margin-top: 110px !important;
+}
+.contant-box{
+    margin: 50px !important;
+}
+}
+.form_error span {
+  font-weight: 600;
+  color: #D83D5A;
+}
+
+/*Styling in case no errors on form*/
+.form_success span {
+  font-weight: 600;
+  color: green;
+}
+.box{
+    box-shadow: 0px 1px 9px 3px darkgrey !important;
+    /*margin: 25px 0px !important;
+    padding: 20px;*/
+    text-align: center;
+    background: #539f3b;
+    color: white;
+    font-weight: 600;
+}
+.box-space{
+    padding: 25px 15px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    background-color: #cc151a !important;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: #f2e562 !important;
+}
+.contant-box{
+    margin: 5px;
+    box-shadow: 0px 1px 9px 3px darkgrey !important;
+    margin-top: 0px;
+    padding-bottom: 1px;
+}
+.hr{
+    margin-top: 45px;
+}
+.pro-hr{
+    margin-left: 265px; 
+    margin-top: -24px;
+    border: 1px solid gainsboro;
+    margin-bottom: 50px;
+}
+.borderd-box{
+    border: 1px solid gray;
+}
+.dropdown-menu>li>a:hover {
+    padding: 10px;
+}
+table, .overflow{
+    overflow: auto;
+}
+.overflow{
+    overflow: auto;
+}
+.tab-pane{
+    padding-top: 20px;
+
+}
+ /* Designing for scroll-bar */ 
+::-webkit-scrollbar { 
+    width: 5px; 
+} 
+
+/* Track */ 
+::-webkit-scrollbar-track { 
+    background: gainsboro; 
+    border-radius: 5px; 
+} 
+/* Handle */ 
+::-webkit-scrollbar-thumb { 
+    background: black; 
+    border-radius: 5px; 
+} 
+
+/* Handle on hover */ 
+::-webkit-scrollbar-thumb:hover { 
+    background: #555; 
+} 
